@@ -6,5 +6,8 @@ const cache = apicache.middleware;
 const router = express.Router();
 
 router.post("/register", register);
+router.get("/", async (_, res) => {
+	return res.send("Hello world");
+});
 
 export { router as authRouter };
