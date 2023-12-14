@@ -34,7 +34,7 @@ app.use("/api/v1/auth", authRouter);
 try {
 	(async () => {
 		await mongoose.connect(process.env.MONGODB_URI).then(() => {
-			console.log(`🚀 Connected to MongoDB  `);
+			console.log(`🚀 Connected to MongoDB`);
 		});
 	})();
 } catch (err) {
